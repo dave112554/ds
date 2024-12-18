@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ds</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <a href="#">Portfo<span>lio.</span></a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="diplomes.html">Diplomes</a></li>
+        <li><a href="competence.html">Competence</a></li>
+        <li><a href="stage.html">Stage</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <div style="margin-top: 10%;">
+      <p style="font-size: 27px;margin-left: 35%;">Send Email</p>
+
+      <div style="margin-left: 35%;">
+
+        <!-- Name Field -->
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" style="width: 300px;"><br><br>
+
+        <!-- Subject Field -->
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" style="width: 300px;"><br><br>
+
+        <!-- Text Field for the Email Body -->
+        <label for="emailText">Enter your message:</label><br>
+        <textarea id="emailText" name="emailText" style="height: 200px;width: 300px;"></textarea><br><br>
+
+        <!-- Button to Send Email -->
+        <button onclick="sendEmail()" style="font-size: 21px;">Send Email</button>
+      </div>
+    </div>
+
+    <script>
+        function sendEmail() {
+            // Get values from the input fields
+            var name = document.getElementById('name').value;
+            var subject = document.getElementById('subject').value;
+            var text = document.getElementById('emailText').value;
+
+            // Email address and subject
+            var email = 'chakchouk412@gmeil.com';
+
+            // Construct the email body with name and message
+            var body = encodeURIComponent("Name: " + name + "\n\nMessage: " + text);
+
+            // Construct the mailto link and open the user's email client
+            var mailtoLink = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + body;
+            window.location.href = mailtoLink;
+        }
+    </script>
+  </div>
+</body>
+
+</html>

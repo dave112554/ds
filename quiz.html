@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin-right: 30%;
+            
+            
+        }
+        .container {
+            
+            margin: 50px ;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px black;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin: 20px ;
+        }
+        .question p {
+            font-size: 18px;
+        }
+        .options input {
+            margin-right: 10px;
+        }
+        .options label {
+            font-size: 16px;
+        }
+        .btn {
+            
+            
+            
+            background-color: green;
+            color: white;
+            
+           
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>HTML Basics Quiz</h1>
+        
+        <form id="quizForm">
+            
+            <div class="question">
+                <p>1. What does HTML stand for?</p>
+                <div class="options">
+                    <input type="radio" name="q1" value="A" id="q1A">
+                    <label for="q1A">A) Hyper Text Markup Language</label><br>
+                    <input type="radio" name="q1" value="B" id="q1B">
+                    <label for="q1B">B) High Text Markup Language</label><br>
+                    <input type="radio" name="q1" value="C" id="q1C">
+                    <label for="q1C">C) Hyperlinks and Text Markup Language</label>
+                </div>
+            </div>
+
+            
+            <div class="question">
+                <p>2. Which tag is used to define a hyperlink in HTML?</p>
+                <div class="options">
+                    <input type="radio" name="q2" value="A" id="q2A">
+                    <label for="q2A">A) &lt;a&gt;</label><br>
+                    <input type="radio" name="q2" value="B" id="q2B">
+                    <label for="q2B">B) &lt;link&gt;</label><br>
+                    <input type="radio" name="q2" value="C" id="q2C">
+                    <label for="q2C">C) &lt;href&gt;</label>
+                </div>
+            </div>
+
+            
+            <div class="question">
+                <p>3. Which tag is used to define an unordered list?</p>
+                <div class="options">
+                    <input type="radio" name="q3" value="A" id="q3A">
+                    <label for="q3A">A) &lt;ul&gt;</label><br>
+                    <input type="radio" name="q3" value="B" id="q3B">
+                    <label for="q3B">B) &lt;ol&gt;</label><br>
+                    <input type="radio" name="q3" value="C" id="q3C">
+                    <label for="q3C">C) &lt;li&gt;</label>
+                </div>
+            </div>
+
+            
+            <div class="question">
+                <p>4. How do you insert an image in HTML?</p>
+                <div class="options">
+                    <input type="radio" name="q4" value="A" id="q4A">
+                    <label for="q4A">A) &lt;image src="image.jpg"&gt;</label><br>
+                    <input type="radio" name="q4" value="B" id="q4B">
+                    <label for="q4B">B) &lt;img href="image.jpg"&gt;</label><br>
+                    <input type="radio" name="q4" value="C" id="q4C">
+                    <label for="q4C">C) &lt;img src="image.jpg"&gt;</label>
+                </div>
+            </div>
+
+            
+            <div class="question">
+                <p>5. Which tag is used to define a paragraph in HTML?</p>
+                <div class="options">
+                    <input type="radio" name="q5" value="A" id="q5A">
+                    <label for="q5A">A) &lt;para&gt;</label><br>
+                    <input type="radio" name="q5" value="B" id="q5B">
+                    <label for="q5B">B) &lt;p&gt;</label><br>
+                    <input type="radio" name="q5" value="C" id="q5C">
+                    <label for="q5C">C) &lt;div&gt;</label>
+                </div>
+            </div>
+
+            
+            <div class="question">
+                <p>6. How do you make a text bold in HTML?</p>
+                <div class="options">
+                    <input type="radio" name="q6" value="A" id="q6A">
+                    <label for="q6A">A) &lt;b&gt;text&lt;/b&gt;</label><br>
+                    <input type="radio" name="q6" value="B" id="q6B">
+                    <label for="q6B">B) &lt;strong&gt;text&lt;/strong&gt;</label><br>
+                    <input type="radio" name="q6" value="C" id="q6C">
+                    <label for="q6C">C) Both A and B</label>
+                </div>
+            </div>
+
+           
+            <div class="question">
+                <p>7. Which tag is used for the largest heading in HTML?</p>
+                <div class="options">
+                    <input type="radio" name="q7" value="A" id="q7A">
+                    <label for="q7A">A) &lt;h6&gt;</label><br>
+                    <input type="radio" name="q7" value="B" id="q7B">
+                    <label for="q7B">B) &lt;h1&gt;</label><br>
+                    <input type="radio" name="q7" value="C" id="q7C">
+                    <label for="q7C">C) &lt;header&gt;</label>
+                </div>
+            </div>
+
+            
+            <div class="question">
+                <p>8. Which attribute is used to provide the URL of the page the link goes to?</p>
+                <div class="options">
+                    <input type="radio" name="q8" value="A" id="q8A">
+                    <label for="q8A">A) href</label><br>
+                    <input type="radio" name="q8" value="B" id="q8B">
+                    <label for="q8B">B) src</label><br>
+                    <input type="radio" name="q8" value="C" id="q8C">
+                    <label for="q8C">C) url</label>
+                </div>
+            </div>
+
+            
+            <div class="question">
+                <p>9. Which tag is used to define a table row in HTML?</p>
+                <div class="options">
+                    <input type="radio" name="q9" value="A" id="q9A">
+                    <label for="q9A">A) &lt;tr&gt;</label><br>
+                    <input type="radio" name="q9" value="B" id="q9B">
+                    <label for="q9B">B) &lt;td&gt;</label><br>
+                    <input type="radio" name="q9" value="C" id="q9C">
+                    <label for="q9C">C) &lt;th&gt;</label>
+                </div>
+            </div>
+
+            
+            <div class="question">
+                <p>10. How do you define a comment in HTML?</p>
+                <div class="options">
+                    <input type="radio" name="q10" value="A" id="q10A">
+                    <label for="q10A">A) &lt;!-- comment --&gt;</label><br>
+                    <input type="radio" name="q10" value="B" id="q10B">
+                    <label for="q10B">B) &lt;comment&gt;</label><br>
+                    <input type="radio" name="q10" value="C" id="q10C">
+                    <label for="q10C">C) &lt;-- comment &gt;</label>
+                </div>
+            </div>
+
+            
+            <button type="button" class="btn" onclick="calculateScore()">Submit</button>
+        </form>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="quiz.js"></script>
+
+</body>
+</html>
