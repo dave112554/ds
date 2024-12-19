@@ -19,7 +19,8 @@
         <li><a href="competence.html">Competence</a></li>
         <li><a href="stage.html">Stage</a></li>
         <li><a href="project.html">Project</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
       </ul>
     </nav>
     
@@ -47,18 +48,17 @@
 
     <script>
         function sendEmail() {
-            // Get values from the input fields
             var name = document.getElementById('name').value;
             var subject = document.getElementById('subject').value;
             var text = document.getElementById('emailText').value;
 
-            // Email address and subject
+            
             var email = 'chakchouk412@gmeil.com';
 
-            // Construct the email body with name and message
+            
             var body = encodeURIComponent("Name: " + name + "\n\nMessage: " + text);
 
-            // Construct the mailto link and open the user's email client
+            
             var mailtoLink = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + body;
             window.location.href = mailtoLink;
         }
